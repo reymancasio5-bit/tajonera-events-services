@@ -156,19 +156,22 @@ const CONFIG = {
 },
 
   // ============================================================
-  // GOOGLE FORM EMBED
-  // HOW TO EMBED GOOGLE FORM:
+  // GOOGLE FORM LINK
+  // Paste your full Google Form URL here (NOT the embed src).
+  // When visitors click "Contact Us to Book", they will be
+  // redirected to this Google Form in a new tab.
+  //
+  // HOW TO GET THE LINK:
   //   1. Open your Google Form
-  //   2. Click Send → Embed (<>)
-  //   3. Copy the full <iframe ...> tag
-  //   4. Paste just the src="" URL value into googleFormEmbed below
+  //   2. Click Send → Link icon (🔗)
+  //   3. Copy the URL and paste it below
   //
   // Example:
-  //   googleFormEmbed: "https://docs.google.com/forms/d/e/YOUR_ID/viewform?embedded=true"
+  //   googleFormLink: "https://docs.google.com/forms/d/e/YOUR_ID/viewform"
   //
-  // Leave empty ("") to hide this section.
+  // Leave empty ("") to use mailto fallback instead.
   // ============================================================
-  googleFormEmbed: "",
+  googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLScIRI94gtb-ikSPtLcwhbFSSVLyABGD1rQPGtw9WQN9mYSTBA/viewform",
 
   // ============================================================
   // GOOGLE SHEETS EMBED
