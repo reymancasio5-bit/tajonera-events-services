@@ -149,11 +149,11 @@ const CONFIG = {
   // Leave empty ("") to hide a specific social link.
   // ============================================================
   social: {
-    facebook:  "https://facebook.com/",
-    instagram: "https://instagram.com/",
-    tiktok:    "",
-    youtube:   "",
-  },
+  facebook:  { url: "https://facebook.com/",  icon: "fab fa-facebook-f" },
+  instagram: { url: "https://instagram.com/", icon: "fab fa-instagram" },
+  tiktok:    { url: "https://www.tiktok.com/en/", icon: "fab fa-tiktok" },
+  youtube:   { url: "https://www.youtube.com/", icon: "fab fa-youtube" },
+},
 
   // ============================================================
   // GOOGLE FORM EMBED
