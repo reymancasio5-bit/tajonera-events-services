@@ -326,7 +326,7 @@
         fallback.innerHTML = `
           <p>Ready to make your event unforgettable? Click below to fill out our booking form.</p>
           <a href="${escHtml(formLink)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-            Contact Us to Book
+            Book Now
           </a>
         `;
       } else {
