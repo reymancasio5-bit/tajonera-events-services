@@ -310,39 +310,36 @@
   }
 
   /* ============================================================
-     7. BOOKING — Google Form embed or fallback
-     HOW TO EMBED GOOGLE FORM: see config.js instructions
+     7. BOOKING — Google Form linked or fallback
+     HOW TO LINK GOOGLE FORM: see config.js instructions
   ============================================================ */
   function buildBooking() {
-    const inner = document.getElementById('bookingInner');
-    if (!inner) return;
+      const inner = document.getElementById('bookingInner');
+      if (!inner) return;
 
-    const formURL = (C.googleFormEmbed || '').trim();
+      const formLink = (C.googleFormLink || '').trim();
 
-    if (formURL) {
-      const wrap = document.createElement('div');
-      wrap.className = 'embed-wrap reveal';
-      const iframe = document.createElement('iframe');
-      iframe.src = formURL;
-      iframe.title = 'Booking Form';
-      iframe.setAttribute('frameborder', '0');
-      iframe.setAttribute('marginheight', '0');
-      iframe.setAttribute('marginwidth', '0');
-      iframe.setAttribute('loading', 'lazy');
-      wrap.appendChild(iframe);
-      inner.appendChild(wrap);
-    } else {
-      // Fallback
       const fallback = document.createElement('div');
       fallback.className = 'booking-fallback reveal';
-      fallback.innerHTML = `
-        <p>Reserve Your <strong>Event Date</strong> → </p>
-        <a href="mailto:${escHtml(C.contact && C.contact.email || '')}" class="btn btn-primary">
-          Contact Us to Book
-        </a>
-      `;
+
+      if (formLink) {
+        fallback.innerHTML = `
+          <p>Ready to make your event unforgettable? Click below to fill out our booking form.</p>
+          <a href="${escHtml(formLink)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Contact Us to Book
+          </a>
+        `;
+      } else {
+        const email = escHtml((C.contact && C.contact.email) || '');
+        fallback.innerHTML = `
+          <p>We'd love to be part of your special day. Reach out to us to get started.</p>
+          <a href="mailto:${email}" class="btn btn-primary">
+            Contact Us to Book
+          </a>
+        `;
+      }
+
       inner.appendChild(fallback);
-    }
   }
 
   /* ============================================================
