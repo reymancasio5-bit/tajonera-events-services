@@ -310,7 +310,60 @@
   }
 
   /* ============================================================
-     7. BOOKING — Google Form linked or fallback
+     7. COMMITMENT SECTION
+  ============================================================ */
+  function buildCommitment() {
+    try {
+      const commitment = C.commitment || {};
+      const intro = document.getElementById('commitmentIntro');
+      if (intro) intro.textContent = commitment.intro || '';
+
+      const grid = document.getElementById('commitmentGrid');
+      if (!grid) return;
+      if (!Array.isArray(commitment.items) || commitment.items.length === 0) return;
+
+      grid.classList.add('reveal-stagger');
+
+      commitment.items.forEach(function (item) {
+        try {
+          const card = document.createElement('div');
+          card.className = 'commitment-card reveal';
+
+          const iconWrap = document.createElement('div');
+          iconWrap.className = 'commitment-icon';
+          const iconEl = document.createElement('i');
+          iconEl.className = item.icon || 'fas fa-check';
+          iconWrap.appendChild(iconEl);
+
+          const titleEl = document.createElement('h3');
+          titleEl.className = 'commitment-title';
+          titleEl.textContent = item.title || '';
+
+          const textEl = document.createElement('p');
+          textEl.className = 'commitment-text';
+          textEl.textContent = item.text || '';
+
+          const accentLine = document.createElement('div');
+          accentLine.className = 'commitment-accent';
+
+          card.appendChild(iconWrap);
+          card.appendChild(titleEl);
+          card.appendChild(textEl);
+          card.appendChild(accentLine);
+          grid.appendChild(card);
+
+          setTimeout(function () { card.classList.add('visible'); }, 100);
+        } catch (e) {
+          console.warn('TES: commitment card error', e);
+        }
+      });
+    } catch (err) {
+      console.error('TES: buildCommitment failed.', err);
+    }
+  }
+
+  /* ============================================================
+     8. BOOKING — Google Form linked or fallback
      HOW TO LINK GOOGLE FORM: see config.js instructions
   ============================================================ */
   function buildBooking() {
@@ -546,6 +599,7 @@
     buildServices();
     buildGallery();
     buildLightbox();
+    buildCommitment();
     buildBooking();
     buildSheetEmbed();
     buildContact();
