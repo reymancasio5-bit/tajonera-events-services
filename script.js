@@ -336,7 +336,7 @@
       const fallback = document.createElement('div');
       fallback.className = 'booking-fallback reveal';
       fallback.innerHTML = `
-        <p>To enable online booking, add your Google Form embed URL in <strong>config.js</strong> → <em>googleFormEmbed</em>.</p>
+        <p>Reserve Your <strong>Event Date</strong> → </p>
         <a href="mailto:${escHtml(C.contact && C.contact.email || '')}" class="btn btn-primary">
           Contact Us to Book
         </a>
@@ -399,23 +399,27 @@
     const socialEl = document.getElementById('socialLinks');
     if (socialEl && C.social) {
       const platforms = [
-        { key: 'facebook',  label: 'Facebook',  icon: 'f' },
-        { key: 'instagram', label: 'Instagram',  icon: '☺' },
-        { key: 'tiktok',    label: 'TikTok',     icon: '♪' },
-        { key: 'youtube',   label: 'YouTube',    icon: '▶' },
-      ];
+        { key: 'facebook',  label: 'Facebook'  },
+        { key: 'instagram', label: 'Instagram' },
+        { key: 'tiktok',    label: 'TikTok'    },
+        { key: 'youtube',   label: 'YouTube'   },
+        ];
 
-      platforms.forEach(function (p) {
-        const url = (C.social[p.key] || '').trim();
+        platforms.forEach(function (p) {
+        const entry = C.social[p.key] || {};
+        const url  = (entry.url  || '').trim();
+        const icon = (entry.icon || '').trim();
         if (!url) return;
         const a = document.createElement('a');
         a.href = url;
         a.target = '_blank';
         a.rel = 'noopener noreferrer';
         a.className = 'social-btn';
-        a.innerHTML = `<span>${p.icon}</span> <span>${escHtml(p.label)}</span>`;
+        a.innerHTML = icon
+            ? `<i class="${escHtml(icon)}"></i> <span>${escHtml(p.label)}</span>`
+            : `<span>${escHtml(p.label)}</span>`;
         socialEl.appendChild(a);
-      });
+        });
     }
   }
 
