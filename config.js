@@ -17,7 +17,7 @@ const CONFIG = {
   // BUSINESS IDENTITY
   // Change your business name, tagline, and logo here.
   // ============================================================
-  businessName: "Tajonera Events Services",
+  businessName: "Tajonera Events and Services – A Signature by RDT",
   tagline: "Where Every Moment Becomes a Memory",
   logoURL: "Logo 1.png",
   // If logoURL is empty, the elegant "T E S" monogram will be shown.
@@ -61,10 +61,8 @@ const CONFIG = {
   // ============================================================
   about: {
     heading: "Crafting Unforgettable Celebrations",
-    text: `At Tajonera Events Services, we transform your vision into an extraordinary reality. 
-           With years of experience and an eye for detail, we specialize in creating elegant, 
-           personalized events that reflect your unique story. From intimate gatherings to grand 
-           celebrations, we handle every detail with passion, precision, and care.`,
+    text: `A Signature by RDT is your trusted local partner for weddings, corporate events, and special celebrations in Surigao del Sur.
+            We combine creative styling with professional technical production to deliver seamless, elegant, and unforgettable events.`,
     highlights: [
       { icon: "✦", label: "Years of Experience", value: "10+" },
       { icon: "✦", label: "Events Completed",    value: "500+" },
@@ -91,26 +89,68 @@ const CONFIG = {
   // ============================================================
   services: [
     {
-      title: "Elegant Decoration",
-      icon: "✿",
-      description: "From floral arrangements to thematic décor, we create breathtaking environments that set the perfect tone for your event. Every detail is curated with artistry and elegance.",
-      image: "https://images.unsplash.com/photo-1478146059778-26028b07395a?w=800&q=80",
+      title: "Wedding Styling & Coordination",
+      icon: "♡",
+      description: "Full event styling and on-the-day coordination for a smooth, stress-free celebration.",
+      image: "https://images.unsplash.com/photo-1764380746258-5954cc8d5fc0?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       video: ""
     },
     {
-      title: "Wedding Coordination",
-      icon: "♡",
-      description: "Your wedding day deserves seamless perfection. Our experienced coordinators manage every aspect — from venue setup to timeline execution — so you can cherish every moment.",
+      title: "Ceremony & Reception Styling",
+      icon: "꧁",
+      description: "From aisle design to reception elegance — every detail styled to perfection.",
       image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&q=80",
       video: ""
     },
     {
-      title: "Lights & Sound System",
+      title: "Stage & Backdrop Design",
       icon: "✶",
-      description: "Premium audio-visual setups that elevate your event atmosphere. Crystal-clear sound, dynamic lighting, and professional technical support for an unforgettable experience.",
-      image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80",
+      description: "Custom-built stages, premium backdrops, romantic accents, and LED-enhanced designs.",
+      image: "https://images.unsplash.com/photo-1576514129883-2f1d47a65da6?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       video: ""
     },
+    {
+      title: "Floral Arrangements",
+      icon: "✿",
+      description: "Fresh or artificial floral designs for: Aisles, Centerpieces, Arches, Entourage Boquets, Ceiling Installations.",
+      image: "https://images.unsplash.com/photo-1606101083393-bded314215cd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      video: ""
+    },
+    {
+      title: "Ceiling Draping & Chandeliers",
+      icon: "❂",
+      description: "Luxurious fabric draping paired with elegant chandeliers to elevate the venue ambiance.",
+      image: "https://images.unsplash.com/photo-1648661560242-8df9df938fe7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      video: ""
+    },
+    {
+      title: "Lights & Sounds System",
+      icon: "✦",
+      description: "Professional equipment with experienced technical support. Clear and powerful audio for weddings, debuts, birthdays, and corporate programs.",
+      image: "https://images.unsplash.com/photo-1630965764341-6db7343cfa57?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      video: ""
+    },
+    {
+      title: "Stage & Ambient Lighting",
+      icon: "✺",
+      description: "Warm romantic lighting, Moving head lights, Uplighting, Spotlight effects, Mood lighting design",
+      image: "https://images.unsplash.com/photo-1639682687092-0264e96cbb71?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      video: ""
+    },
+    {
+      title: "Led Wall / Led TV Rental",
+      icon: "▦",
+      description: "Modern display solutions for impactful visuals. Perfect for: Wedding SDE, AVP Presentations, Same-day edits, Corporated Branding",
+      image: "https://images.unsplash.com/photo-1643642969389-6db6b7a0fa56?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      video: "" 
+    },
+    {
+      title: "Corporate & Wedding Visual Setup",
+      icon: "✤",
+      description: "Professional screen and visual arrangement for conferences, product launches, and formal events.",
+      image: "https://images.unsplash.com/photo-1643066873547-bb968527969d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      video: ""
+    }
   ],
 
   // ============================================================
@@ -137,9 +177,9 @@ const CONFIG = {
   // Update your contact information here.
   // ============================================================
   contact: {
-    phone:   "+63 912 345 6789",
-    email:   "hello@tajoneraevents.com",
-    address: "San Miguel, Surigao del Sur Philippines",
+    phone:   "+639125984915",
+    email:   "jamesdtajonera@gmail.com",
+    address: "Tandag City, Surigao del Sur Philippines",
     hours:   "Mon – Sat: 9:00 AM – 6:00 PM",
   },
 
@@ -149,10 +189,10 @@ const CONFIG = {
   // Leave empty ("") to hide a specific social link.
   // ============================================================
   social: {
-  facebook:  { url: "https://facebook.com/",  icon: "fab fa-facebook-f" },
-  instagram: { url: "https://instagram.com/", icon: "fab fa-instagram" },
-  tiktok:    { url: "https://www.tiktok.com/en/", icon: "fab fa-tiktok" },
-  youtube:   { url: "https://www.youtube.com/", icon: "fab fa-youtube" },
+  facebook:  { url: "https://web.facebook.com/profile.php?id=100067916282313",  icon: "fab fa-facebook-f" },
+  instagram: { url: "", icon: "fab fa-instagram" },
+  tiktok:    { url: "", icon: "fab fa-tiktok" },
+  youtube:   { url: "", icon: "fab fa-youtube" },
 },
 
   // ============================================================
@@ -171,6 +211,47 @@ const CONFIG = {
   //
   // Leave empty ("") to use mailto fallback instead.
   // ============================================================
+  // ============================================================
+  // COMMITMENT SECTION
+  // Edit the intro text and commitment items here.
+  // Each item needs: icon (Font Awesome class), title, and text.
+  // ============================================================
+  commitment: {
+    intro: "As a proudly local events provider, we are committed to excellence and reliability. We ensure:",
+    items: [
+      {
+        icon: "fas fa-bolt",
+        title: "Fast Response & Coordination",
+        text: "We act quickly on inquiries, bookings, and last-minute adjustments so your event stays on track."
+      },
+      {
+        icon: "fas fa-clock",
+        title: "Reliable On-Time Setup",
+        text: "Punctuality is our promise. Every setup is completed on schedule, well before your guests arrive."
+      },
+      {
+        icon: "fas fa-user-tie",
+        title: "Hands-On Management Supervision",
+        text: "Our management team personally oversees every event to ensure nothing is left to chance."
+      },
+      {
+        icon: "fas fa-handshake",
+        title: "Strong Local Partnerships",
+        text: "We work closely with trusted local vendors and venues across Surigao del Sur for seamless execution."
+      },
+      {
+        icon: "fas fa-heart",
+        title: "Personalized Client Service",
+        text: "Every client is treated as a priority. We listen, adapt, and deliver exactly what you envision."
+      },
+      {
+        icon: "fas fa-star",
+        title: "High-Quality Styling & Equipment",
+        text: "We use premium materials and well-maintained equipment to deliver stunning, professional results every time."
+      },
+    ]
+  },
+
   googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLScIRI94gtb-ikSPtLcwhbFSSVLyABGD1rQPGtw9WQN9mYSTBA/viewform",
 
   // ============================================================
