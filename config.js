@@ -19,7 +19,7 @@ const CONFIG = {
   // ============================================================
   businessName: "Tajonera Events Services",
   tagline: "Where Every Moment Becomes a Memory",
-  logoURL: "",
+  logoURL: "Logo 1.png",
   // If logoURL is empty, the elegant "T E S" monogram will be shown.
   // To use your own logo: logoURL: "https://your-image-link.com/logo.png"
 
