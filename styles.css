@@ -187,12 +187,17 @@ ul {
 
 .btn-ghost {
   background: transparent;
-  color: var(--text);
+  color: var(--primary);
 }
 
 .btn-ghost:hover {
+  background: var(--primary);
   color: var(--dark);
+  box-shadow: 0 0 24px var(--glow);
   transform: translateY(-2px);
+}
+.btn-ghost:hover::before {
+  transform: scaleX(0);
 }
 
 /* ── NAVBAR ── */
