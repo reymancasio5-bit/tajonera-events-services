@@ -18,7 +18,7 @@ const CONFIG = {
   // Change your business name, tagline, and logo here.
   // ============================================================
   businessName: "Tajonera Events and Services – A Signature by RDT",
-  tagline: "Where Every Moment Becomes a Memory",
+  tagline: "Satisfaction Guaranteed",
   logoURL: "Logo 1.png",
   // If logoURL is empty, the elegant "T E S" monogram will be shown.
   // To use your own logo: logoURL: "https://your-image-link.com/logo.png"
